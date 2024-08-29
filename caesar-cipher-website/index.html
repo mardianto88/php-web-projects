@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Encryption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Caesar Cipher Encryption</h1>
+    </header>
+
+    <main>
+        <section id="description">
+            <h2>What is Caesar Cipher?</h2>
+            <p>The Caesar Cipher is a substitution cipher where each letter in the plaintext is shifted a certain number
+                of places down or up the alphabet. Named after Julius Caesar, who used this encryption method in his
+                private correspondence, it is one of the simplest and oldest encryption techniques.</p>
+            <h3>How It Works:</h3>
+            <ul>
+                <li>Choose a shift value (key). For example, 3.</li>
+                <li>Shift each letter in the plaintext by the key value. For instance, with a key of 3, A becomes D, B
+                    becomes E, and so on.</li>
+                <li>The result is the ciphertext.</li>
+            </ul>
+        </section>
+
+        <section id="encryption">
+            <h2>Encrypt Your Text</h2>
+            <form id="cipher-form">
+                <label for="text">Text to Encrypt:</label>
+                <textarea id="text" rows="4" cols="50" required></textarea>
+
+                <label for="shift">Shift Value:</label>
+                <input type="number" id="shift" min="1" max="25" required>
+
+                <button type="submit">Encrypt</button>
+            </form>
+            <h3>Encrypted Text:</h3>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caesar Cipher Encryption Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
